@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let name = "John";
+        // let age = 18;
+
+        // // using normal quotes
+        // console.log("Hello " + name + ", how are you ?");
+        
+        // // using ES6 template literals
+        // console.log(`Hello ${name}`);
+        // console.log(`Hello ${name}, you are ${age} years old.
+        //     We are going to quinox.
+        //     Are you game?? `);
+
+        //program to check pass or fail 
+        // let mark = prompt ('Enter your mark:'); 
+
+        // check the condition
+        // let result = ( mark >=40 ) ? 'passed' : 'failed';
+
+        // console.log (`You ${result} the exam.`);
+
+        // program to check if number is positive, negative or zero
+        // let a = 0;
+        // let result = (a === 0) ?  "zero" : (a > 0 ? "positive"  : "negative");
+        // console.log(`The number is ${result}.`);
+    
+        // JavaScript (ES5)
+        // function multiply(x, y) { 
+        //     return x * y; 
+        // };
+        
+        // ES6
+        // const multiply = (n, m) => { 
+        //     return n * m 
+        // };
+
+        // const multiply = (n, m) => n * m
+
+        // let m = multiply(3, 4);
+        // // console.log(m)
+        // console.log(multiply(2, 3))
+
+        // multiply(2, 3)
+
+        // const multiplyBy2 = (n) => 2 * n ;
+
+        // let r = multiplyBy2(2);
+
+        // let sayHello = () => alert(`Hello`);
+
+        // let sayBye = () => alert('Bye');
+
+        // // sayHello(); // “Hello” will be alerted
+        // // Let’s create a function that takes an argument and call it as if it was a function
+        // let doSomething = (callback) => {
+        //     if(typeof(callback) == 'function')
+        //         callback();
+        //     else
+        //         alert('Wrong argument type')
+        // };
+        
+        // //  Now any function we send to “doSomething()” function will be called right away
+        // doSomething(sayHello); // “Hello” will be alerted
+        // // doSomething(20); // “Bye” will be alerted
+
+        const people = [
+            { name: 'Max', age: 10 }, 
+            { name: 'Jack', age: 6 }, 
+            { name: 'Mary', age: 8 }
+        ]
+        
+        // JavaScript
+        // function findPerson(name) {
+        //     for (let i = 0; i < people.length; i++) {
+        //         let person = people[i]
+        //         if (person.name === name) {
+        //             return person
+        //         }
+        //     }
+        // }
+
+        // ES6
+        // function findPerson(name) {
+        //     return people.find((person) => person.name == name)
+        // }
+
+        // let person = findPerson('Mary');
+        // console.log('Person : ', person)
+
+        // JavaScript
+        // function showEachOne() {
+        //     for (let i = 0; i < people.length; i++) {
+        //         console.log(people[i].name, people[i].age)
+        //     }
+        // }
+
+        // ES6
+        // const showEachOne = () => {
+        //     people.forEach((person) => {
+        //         person.age = 0
+        //         // console.log(person.name, person.age)
+        //     })
+        // };
+
+        // showEachOne();
+
+        // console.log('New people', people)
+
+        const products = [
+            {name:"Milk", price:15}, 
+            {name:"Water", price:9}, 
+            {name:"Bread", price:5}
+        ];
+
+
+        // JavaScript
+        // function filterProducts() {
+        //     let filteredProducts = [];
+            // for (let i = 0; i < products.length; i++) {
+            //     if (products[i].price > 10) {
+            //         filteredProducts.push(products[i]);
+            //     }
+            // }
+        //     return filteredProducts;
+        // }
+
+        // ES6
+        // const filterProducts = () => {
+        //     let result = products.filter(product => product.price > 10);
+        //     return result;
+        // }
+        // console.log(filterProducts());
+
+        // JavaScript
+        // function changeProducts() {
+        //     for (let i = 0; i < products.length; i++) {
+        //         products[i].price += 2
+        //     }
+        //     return products
+        // }
+
+        // ES6
+        const changeProducts = () => {
+            let updatedProducts = products.map(product => ({ 
+                    ...product, 
+                    name: 'Item: ' + product.name, 
+                    price: product.price + 2 
+                }
+            ));
+            return updatedProducts
+        }
+        
+        console.log(changeProducts());
+        console.log(products);
+
+        const data = [5, 10, 15, 20, 25]
+        const res = data.reduce((total, currentValue) =>  total + currentValue)
+        console.log(res)// 75
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

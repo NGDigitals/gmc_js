@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- first way -->
+    <button id="tester" onclick=foo(this)>Alert 1</button>
+    
+    <!-- the second way -->
+    <button id="button">Alert 2</button>
+
+    <div class="d-flex h-100">
+		<p>try pressing some keys:</p>
+		<p id="log"></p>
+	</div>
+    <script>
+
+        // function foo(el){
+        //     console.log(el.innerHTML)
+        //     el.setAttribute('disabled', true)
+        //     // alert('Foo clicked')
+
+        // }
+
+        // function bar(){
+        //     let el = event.target
+        //     console.log(el.innerHTML)
+        //     // el.setAttribute('disabled', true)
+        //     // alert('Bar clicked')
+
+        // }
+
+
+        // var btn = document.getElementById('button');
+        // // btn.onclick = bar;
+        // btn.addEventListener('click', bar);
+        // //  // Remove the event listener  
+        // btn.removeEventListener('click', bar);
+
+        document.addEventListener('keydown', logKey);
+        let log = document.getElementById('log');
+        
+        function logKey(event) {
+            log.textContent += " " + event.code;
+        }
+    </script>
+</body>
+</html>

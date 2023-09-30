@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script src="main.js"></script> -->
+
+    <script lang="javascript">
+        // alert('Welcome')
+        // let option = confirm('Are you sure???')
+        // console.log(option)
+        // let name = prompt('What is your name??')
+        // console.log(name)
+
+        // let num = 2
+        // // typeof(true)
+        // console.log(typeof(true)) // prints boolean
+        // console.log(typeof(9000)) // prints number
+        // console.log(typeof("Übermensch")) // prints string
+        // console.log(typeof(num)) // prints undefined
+        // console.log(typeof(null)) // prints object
+
+        // let person1 = {
+        //     name: "foulan",
+        //     age: 9000,
+        //     isStudent: true
+        // }
+
+        // console.log(person1.name)
+
+        // person1.name = 'Eugene';
+
+        // console.log(person1.name)
+
+        // console.log(person1)
+
+        // let num1 = 2;
+        // let num2 = 4;
+        // let result = num1 ** num2;
+
+        // console.log(result)
+
+        // // NaN
+        // console.log(0 / 0);
+        // console.log('Some random string ', 2, ' no way out');
+
+        // // Infinity 
+        // console.log(1 / 0);
+        // console.log(Infinity * Infinity);
+        // console.log(1e+309);
+
+        // var num = 0;
+        // console.log(num)
+        // // num++
+        // console.log(++num)
+        // // num--
+        // console.log(--num)
+
+        // let a = true;
+        // let b = 'true';
+
+        // console.log(a == b);
+        // let isOk = true;
+
+        // console.log(isOk)
+
+        // isOk = false
+
+        // console.log(isOk)
+
+        // console.log(1 == '1')
+
+        // console.log(Boolean(undefined));
+        // console.log(Boolean(null));
+        // console.log(Boolean(NaN));
+        // console.log(Boolean(""));
+        // console.log(Boolean(0));
+        // console.log(Boolean(false));
+
+        // var x = 1 // x is truthy
+        // var y = 0 // y is falsey
+        // var z = null // z is falsey
+        // console.log(x && y) // prints 0
+        // console.log(z && y) // prints null
+        // console.log(z || x) // prints 1
+        // console.log(y || z) // prints null
+
+        // var x = 0;
+        // var y = 10;
+        // var z = 5;
+
+        // console.log(z > x || z > y) // prints true
+        // console.log(z > x && z <= y) // prints true
+        // console.log(z > x && z != y) // prints true
+
+        // console.log(Boolean(NaN)) // prints false
+        // console.log(!!undefined) // prints false
+        // console.log(!!Infinity) // prints true
+        // console.log(!!5) // prints true
+
+        // var x = "google";
+        // x += "." + "com"
+        // console.log(x) // prints “google.com”
+
+        // var name = "Lucy";
+        // console.log(`Yo, ${name}!`) // prints “Yo, Lucy!”
+
+        // function add(a, b) {
+        //     let sum = a + b;
+        //     return sum;
+        // }
+        // let res = add(10, 5)
+        // console.log(res); // prints 15
+        // console.log(add(10, 10)) // prints 20
+
+        // let subtract = function(a = 5, b = 1) {
+        //     return a - b;
+        // }
+
+        // let num1 = prompt('Enter your first number')
+        // let num2 = prompt('Enter your second number')
+        // let result = subtract(num1, num2)
+
+        // console.log(result);
+
+        // function checkIfNumber( x ){
+        //     if ( typeof(x) === 'number' ){
+        //         console.log( x + ' is a number.' ); 
+        //     } else {
+        //         console.log("Oops that's not a number.");
+        //     }
+        // }
+        // checkIfNumber(6)
+
+        // function decodeColor( code ) {
+        //     if ( code === 1 ) {
+        //         console.log( 'Red' );
+        //     } else if ( code === 2 ) {
+        //         console.log( 'Yellow' );
+        //     } else if ( code === 3 ) {
+        //         console.log( 'Green' );
+        //     } else {
+        //         console.log( 'Unknown code' );
+        //     }
+        // }
+
+        // // function decodeColor( code ) {
+        // //     switch( code) {
+        // //         case 1:
+        // //             console.log( 'Red' );
+        // //             break;
+        // //         case 2:
+        // //             console.log( 'Yellow' );
+        // //             break;
+        // //         case "x":
+        // //             console.log( 'Green' );
+        // //             break;
+        // //         default:
+        // //             console.log( 'Unknown code' );
+        // //     }
+        // // }
+
+        // function decodeColor( code ) {
+        //     switch( code) {
+        //         case 1:
+        //             return 'Red';
+        //         case 2:
+        //             return 'Yellow';
+        //         case "x":
+        //             return 'Green';
+        //         default:
+        //             return 'Unknown code';
+        //     }
+        // }
+        // // // 2_Calling the function
+
+        // console.log(decodeColor(1)) // prints Red
+
+        // decodeColor(2) // prints Yellow
+
+        // decodeColor('x') // prints Green
+
+        // decodeColor('blah') // prints Unknown code
+
+        // // Let’s sum the values of a small array
+        // var numbers = [19, 65, 1, 2, 6, 1, 9, 9, 2, 1]; 
+
+        // var sum = 0;
+        // var i = 0;
+        // while ( i < numbers.length ) {
+        //     sum += numbers[i];// sum = sum + numbers[i]
+        //     i += 1; //++i
+        // }
+        // console.log( 'The loop was executed ' + i + ' times' );
+        // // // prints The loop was executed 10 times
+
+        // console.log(sum);
+        // // // prints 115
+
+        // Let’s sum the values of a small array
+        // var numbers = [19, 65, 1, 2, 6, 1, 9, 9, 2, 1]; 
+
+        // var sum = 0;
+        // var i = 0;
+        // do {
+        //     sum += numbers[i];
+        //     i += 1;
+        // } while ( i < numbers.length )
+
+        // console.log( 'The loop was executed ' + i + ' times' );
+        // // prints The loop was executed 10 times
+
+        // console.log(sum);
+        // // prints 115
+
+        // // Let’s sum the values of a small array
+        // let sum = 0;
+        // var numbers = [19, 65, 1, 2, 6, 1, 9, 9, 2, 1]; 
+        // for(let i = 0; i < numbers.length; i++){
+        //     // var myNumber = i;
+        //     let myNumber = i;
+        //     console.log(myNumber); // 0, 1, 2, 3, 4, 5
+        //     sum += numbers[i];// sum = 0 + 19, 19 + 65
+        // }
+        // console.log(myNumber);// Wrong
+        // for(let i = numbers.length - 1; i >=0; i--){
+        //     sum += numbers[i];// sum = 0 + 19, 19 + 65
+        // }
+        // // Using the for… in loop
+        // for ( let i in numbers) {
+        //     sum += numbers[i];
+        // }
+        // // Using the for… of loop
+        // for ( let value of numbers) {
+        //     sum += value;
+        // }
+        // console.log(sum);
+        // // // prints 115
+
+        // // Let’s sum every second element of the numbers array:
+        // var numbers = [19, 65, 1, 2, 6, 1, 9, 9, 2, 1]; 
+        // var sum = 0;
+        // for ( var i in numbers ) {
+        //     if ( i % 2 != 0 ) 
+        //         continue;
+        //     sum += numbers[i]
+        // }
+
+        // for ( var value of numbers ) {
+        //     if ( value % 2 != 0 ) 
+        //         continue;
+        //     sum += value
+        // }
+
+        // var numbers = [19, 65, 1, 2, 6, 1, 9, 9, 2, 1];
+        // var sum = 0;
+
+        // for ( var i in numbers) {
+        //     sum += numbers[i];
+        //     if ( sum >= 50 ) {
+        //         break;
+        //     }
+        // }
+        // console.log(sum)
+
+
+        // var days=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+        // console.log(days); 
+        // // // prints ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+
+        // days.push( 'Saturday' );
+        // console.log(days); 
+        // // // prints ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ]
+
+        // days.unshift( 'Sunday' ); 
+        // console.log(days); 
+        // // // prints ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ]
+
+        // days.pop();
+        // console.log(days);
+        // // // prints ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' ]
+
+        // days.shift();
+        // console.log(days); 
+        // // // prints ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' ]
+
+        // // var days=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+        // // console.log(days);
+        // // // prints ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+
+        // delete days[2];
+        // console.log(days); 
+        // // // prints ['Monday', 'Tuesday', undefined, 'Thursday', 'Friday']
+
+        // days[3] = 'Wednesday';
+        // console.log(days); 
+        // // prints ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+
+        // delete days[7];
+        // console.log(days);
+        // // prints ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+
+        // Initializing an object literal with curly brackets
+        var person = {
+            name: 'Eugene',
+            age: 10,
+            gender: 'Male',
+
+            talk: function() {
+                console.log(`Hi, my name is ${this.name}!`);
+            },
+            move: function(){
+                console.log('I am moving')
+            }
+        };
+
+        console.log(person.name)
+        person.talk();
+        person.move();
+        delete person.age;
+        console.log(person)
+        console.log(person['gender'])
+
+        person.age = 15;
+        console.log(person['age'])
+
+        person.run = function(){
+            console.log(`${this.name} is running...`)
+        }
+
+        person.run();
+
+        // Initializing an object constructor with new Object
+        let car = new Object();
+        car.model = '2010';
+        car.brand = 'Mercedes';
+        car.color = 'White';
+
+        car.speed = function(){
+            console.log(`${this.brand} is speeding...`)
+        }
+
+
+        console.log(car.brand)
+        car.speed();
+    </script>
+
+</head>
+<body>
+    
+    <!-- <script src="main.js"></script> -->
+    <!-- <script lang="javascript">
+        console.log('Welcome Again')
+    </script> -->
+</body>
+</html>
